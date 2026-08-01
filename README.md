@@ -1,4 +1,4 @@
-# esp32-register-level-gpio-driver
+# ESP32-register-level-gpio-driver
 Register-level GPIO driver implementation for ESP32 using Embedded C without ESP-IDF GPIO APIs.
 # ESP32 Register-Level GPIO Driver
 
