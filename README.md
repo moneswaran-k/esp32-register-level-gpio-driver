@@ -30,3 +30,12 @@ This project demonstrates GPIO control on the ESP32 by directly programming hard
 gpio_init_output();
 gpio_set();
 gpio_clear();
+````
+
+# Future Improvements
+ - GPIO Input Driver
+ - Timer Driver
+ - UART Driver
+ - SPI Driver
+ - I2C Driver
+ - Interrupt Support
