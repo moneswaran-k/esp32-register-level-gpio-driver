@@ -74,19 +74,6 @@ void timer_delay_ms(uint32_t ms);
 
 ---
 
-## Future Improvements
-
-- Timer interrupt driver
-- GPIO interrupt driver
-- UART driver
-- SPI driver
-- I²C driver
-- PWM driver
-- ADC driver
-- DMA support
-
----
-
 ## Why This Project?
 
 Most ESP32 examples use high-level ESP-IDF APIs.
