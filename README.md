@@ -26,20 +26,6 @@ The objective of this project is to gain a deep understanding of the ESP32 hardw
 
 ---
 
-## Drivers
-
-| Driver | Status |
-|---------|--------|
-| GPIO | ✅ Complete |
-| Timer | ✅ Complete |
-| UART | ⏳ Planned |
-| SPI | ⏳ Planned |
-| I²C | ⏳ Planned |
-| GPIO Interrupt | ⏳ Planned |
-| Timer Interrupt | ⏳ Planned |
-
----
-
 ## Hardware
 
 - ESP32-WROOM-32
