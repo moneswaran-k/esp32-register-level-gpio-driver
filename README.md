@@ -1,36 +1,121 @@
-# ESP32-register-level-gpio-driver
-Register-level GPIO driver implementation for ESP32 using Embedded C without ESP-IDF GPIO APIs.
-# ESP32 Register-Level GPIO Driver
+# ESP32 Register-Level Peripheral Drivers
 
-## Overview
-This project demonstrates GPIO control on the ESP32 by directly programming hardware registers without using the ESP-IDF GPIO driver.
+A collection of reusable peripheral drivers for the ESP32 developed using **Embedded C** by directly programming the hardware registers instead of using the ESP-IDF peripheral APIs.
+
+The objective of this project is to gain a deep understanding of the ESP32 hardware by implementing peripheral drivers from the ESP32 Technical Reference Manual (TRM).
+
+---
 
 ## Features
 
-- Register-level GPIO programming
+### GPIO Driver
+- Configure GPIO as output
 - IO_MUX configuration
-- Memory-Mapped I/O
-- W1TS/W1TC registers
-- Bit manipulation
-- Embedded C
+- GPIO Enable register configuration
+- Write-One-to-Set (W1TS)
+- Write-One-to-Clear (W1TC)
+- LED blink example
+
+### Timer Driver
+- Timer configuration
+- Prescaler configuration (80 MHz → 1 MHz)
+- Timer reset using LOAD registers
+- Counter update using UPDATE register
+- Polling-based millisecond delay
+- Reusable timer API
+
+---
+
+## Drivers
+
+| Driver | Status |
+|---------|--------|
+| GPIO | ✅ Complete |
+| Timer | ✅ Complete |
+| UART | ⏳ Planned |
+| SPI | ⏳ Planned |
+| I²C | ⏳ Planned |
+| GPIO Interrupt | ⏳ Planned |
+| Timer Interrupt | ⏳ Planned |
+
+---
 
 ## Hardware
 
 - ESP32-WROOM-32
 
-## Development Environment
+---
 
-- ESP-IDF
+## Software
+
 - Embedded C
-- Linux
+- ESP-IDF
+- Linux (Pop!_OS)
 
-## Driver Functions
+---
+
+## Concepts Learned
+
+- Memory-Mapped I/O
+- Register-Level Programming
+- Embedded C
+- Bit Manipulation
+- Read-Modify-Write Operations
+- GPIO Peripheral
+- General Purpose Timer
+- Hardware Timers
+- Technical Reference Manual (TRM)
+
+---
+
+## APIs Implemented
+
+### GPIO Driver
 
 ```c
-gpio_init_output();
-gpio_set();
-gpio_clear();
+void gpio_init_output(uint8_t pin);
+void gpio_set(uint8_t pin);
+void gpio_clear(uint8_t pin);
 ```
+
+### Timer Driver
+
+```c
+void timer_init(void);
+void timer_reset(void);
+void timer_delay_ms(uint32_t ms);
+```
+
+---
+
+## Future Improvements
+
+- Timer interrupt driver
+- GPIO interrupt driver
+- UART driver
+- SPI driver
+- I²C driver
+- PWM driver
+- ADC driver
+- DMA support
+
+---
+
+## Why This Project?
+
+Most ESP32 examples use high-level ESP-IDF APIs.
+
+This project focuses on understanding the hardware by implementing drivers directly from the ESP32 Technical Reference Manual (TRM), providing insight into how peripherals operate at the register level.
+
+---
+
+## Author
+
+Moneswaran K
+
+Electronics and Communication Engineering (ECE)
+
+Embedded Systems | Embedded C | ESP32 | Firmware Development
 
 ## Future Improvements
 
