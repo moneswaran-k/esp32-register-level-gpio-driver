@@ -82,14 +82,6 @@ This project focuses on understanding the hardware by implementing drivers direc
 
 ---
 
-## Author
-
-Moneswaran K
-
-Electronics and Communication Engineering (ECE)
-
-Embedded Systems | Embedded C | ESP32 | Firmware Development
-
 ## Future Improvements
 
 - [ ] Add GPIO input support (button reading)
